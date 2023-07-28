@@ -1,0 +1,27 @@
+<h1>Registration Form</h1>
+<form action="/server">
+  <fieldset>
+    <label for="firstname"></label>
+    <input
+      type="text"
+      id="firstname"
+      placeholder="First Name"
+      name="firstname"
+    />
+    <label for="lastname"></label>
+    <input type="text" id="lastname" placeholder="Last Name" name="lastname" />
+    <br />
+    <label for="gender">Please Select gender</label>
+    <select name="gender" id="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <br />
+    Do you agree to all terms of services?
+    <label for="terms"></label>
+    <input type="checkbox" id="terms" name="terms" value="select" />
+    Yes, I agree
+    <br />
+    <button>Register</button>
+  </fieldset>
+</form>
