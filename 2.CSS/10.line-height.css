@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+  text-decoration: red wavy underline;
+}
+h3 {
+  text-align: start;
+  text-decoration: pink line-through;
+}
+p {
+  text-align: justify;
+  font-weight: 400;
+  line-height: normal;
+}
+h2 {
+  font-weight: 800;
+  text-decoration: blue double overline;
+}
+a {
+  text-decoration: none;
+}
