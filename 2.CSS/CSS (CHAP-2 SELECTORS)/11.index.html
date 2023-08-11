@@ -1,0 +1,133 @@
+<!-- Cascading and specificity -->
+<!-- CSS:Cascading styleSheets -->
+<!-- 
+    What is cascade in Css?
+    The CSS cascade algorithm's job is to select CSS declaration in order to determine the correct values for CSS properties.
+ -->
+ <!-- 
+    h1{ 
+        background-color:yellow;
+    }
+    h2{
+        background-color:blue;
+    }
+
+
+    //then final color of h2 is blue => kyonki last me blue color hai.
+  -->
+  <!-- 
+    Selector Specificity
+    what is specificity?
+    Specificity is an algorithm that calculates the weight that is applied to a given  CSS declaration
+    1. id
+    2. class, attribute & pseudo-class
+    3.element& pseudo-element
+
+
+    preference order=>
+
+    id > class > element
+   -->
+   <!-- what to remember
+    1. id > class >element
+    2. more selectors > less selectors
+    3. if specificity same => cascading (that is same element rahega to last wala dominate karega.) -->
+
+<!-- inline specificity
+    inline styles are more specific than id
+    1.inline >2. id > 3. class,attribute& pseudo-class >4. element& pseudo-element
+
+-->
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSS Chapter2</title>
+      <link rel="stylesheet" href="11.Cascading.css">
+      <link rel="stylesheet" href="11.Cascading2.css">
+    </head>
+    <body>
+      <header>
+          <h1>Quora 
+              <button id="login">Log in</button>
+              <button id="signup">Sign up</button>
+          </h1>
+          <div>
+              <input type="text" placeholder="username">
+              <input type="password" placeholder="password">
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="/home">Home</a></li>
+                  <li><a href="/following">Following</a></li>
+                  <li><a href="/answer">Answer</a></li>
+                  <li><a href="/spaces">Spaces</a></li>
+              </ul>
+          </nav>
+          <hr>
+      </header>
+      <main>
+          <div>
+          <p class ="post">
+          Adam &nbsp;&nbsp;
+          <a class="follow" href="/adam">Follow /abc</a></span>
+          </p>
+          <h3>What is the highest salary for a spacex engineer?</h3>
+          <span>
+              <button class="upvote">+upvote</button>
+              <button>answer</button>
+          </span>
+          <hr />
+          </div>
+          <div>
+          <p class ="post">
+          Bob &nbsp;&nbsp;
+          <a class="follow" href="/bob">Follow xyz</a>
+          </p >
+          <h3 class="post">What is the syllabus for JEE 2024?</h3>
+          <span>
+              <button class="upvote">+upvote</button>
+              <button>answer</button>
+          </span>
+          <hr />
+          </div>
+          <div>
+          <p class="post">
+          Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="follow" href="/catlyn">Follow pqr</a>
+          </p>
+          <h3>Why is the sky blue?</h3>
+          <span>
+              <button class ="upvote">+upvote</button>
+              <button>answer</button>
+          </span>
+          <hr />
+          </div>
+          <div>
+          <p class="post">
+              Dan &nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="follow" href="/dan">Follow pqr</a>
+              </p>
+              <h3>Why is the sky blue?</h3>
+              <span>
+                  <button class ="upvote">+upvote</button>
+                  <button>answer</button>
+              </span>
+              <hr />
+          </div>
+          <p>This is the end of my website.Know more about us on <a href="https://google.com">Google</a></p>
+      </main>
+           <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, iure officiis suscipit maxime quidem fugit nostrum, ducimus repudiandae similique excepturi autem consequuntur ullam. Laborum praesentium ducimus reprehenderit natus? Eligendi, quos!
+           </p>
+         <div>
+            <input type="radio" id ="yes" name="agreement">
+            <label for="yes">Yes</label>
+            <input type="radio" id ="no" name="agreement">
+            <label for="no">No</label>
+         </div>
+    </body>
+  </html>
+  
