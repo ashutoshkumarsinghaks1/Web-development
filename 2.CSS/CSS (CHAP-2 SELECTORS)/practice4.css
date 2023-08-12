@@ -1,0 +1,24 @@
+div p {
+  background-color: black;
+}
+.para {
+  background-color: blue;
+}
+p {
+  background-color: green;
+}
+
+/* div p is descendent selector
+  .para is class selector 
+  p is eement selector 
+   1. div p => div  and p are element selector
+   0 , 0 ,1+1 => 2
+   2. .para
+   0, 1,0  =>   10
+   3. p  
+   0, 0, 1 =>  1
+
+   now, 10 > 2> 1 so blue color
+
+
+*/
