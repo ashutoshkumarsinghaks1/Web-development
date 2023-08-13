@@ -1,0 +1,49 @@
+<!-- 
+    Inheritance in CSS
+    grandparent -> parent -> children
+ -->
+<!-- ex- 
+ <div>
+    <p>
+        <ul></ul>
+    </p>
+ </div> 
+
+ Suppose if we set color of div blue and not not any color to paragraph p and ul , div color will automaticaly inherited.
+
+-->
+<!-- no every property is inherited . for ex- width , height, border ,etc are non-inheritable -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+    <link rel="stylesheet" href="13.inheritance.css" />
+  </head>
+  <body>
+    <h1>Main Heading</h1>
+    <div>
+      <h2>Heading 1</h2>
+      <form>
+        <label for="username">username:</label>
+        <input type="text" placeholder="username" />
+        <label for="password">password:</label>
+        <input type="text" placeholder="password" />
+        <button>Login</button>
+      </form>
+      <hr />
+    </div>
+
+    <div>
+      <h2>Heading 2</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quod
+        a, maxime odit, magnam adipisci hic quaerat debitis officiis porro at
+        eius architecto placeat, modi atque officia possimus cupiditate
+        perferendis sunt! Sed et optio iusto nam possimus labore, doloremque
+        aspernatur!
+      </p>
+    </div>
+  </body>
+</html>
